@@ -3,7 +3,6 @@ description: Bug report template
 title: "Bug: "
 labels: ["bug"]
 type: bug
-projects: ["PhysVR/1"]
 assignees: []
 body:
   - type: textarea
