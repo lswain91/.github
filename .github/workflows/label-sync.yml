@@ -16,7 +16,6 @@ jobs:
           config-file: .github/labels.yml
           token: ${{ secrets.LABEL_SYNC_TOKEN }}
           repositories: |
-            PhysVR/Candela-Unity-App
-            PhysVR/Candela-Graphical-Assets
-            PhysVR/Software-Team
+            lswain91/Accounting-software
+            lswain91/Tessellation-project
           clean-labels: true
