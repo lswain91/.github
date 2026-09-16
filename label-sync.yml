@@ -1,0 +1,22 @@
+name: Sync labels
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/labels.yml'
+  workflow_dispatch:
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: srealmoreno/label-sync-action@v2
+        with:
+          config-file: .github/labels.yml
+          token: ${{ secrets.LABEL_SYNC_TOKEN }}
+          repositories: |
+            PhysVR/Candela-Unity-App
+            PhysVR/Candela-Graphical-Assets
+            PhysVR/Software-Team
+          clean-labels: true
