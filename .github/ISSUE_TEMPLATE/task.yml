@@ -2,7 +2,6 @@ name: General Task
 description: A non‑feature, non‑bug task such as refactoring, cleanup, documentation, or PM work
 title: "Task: "
 labels: ["task"]
-projects: ["PhysVR/1"]
 type: task
 assignees: []
 body:
