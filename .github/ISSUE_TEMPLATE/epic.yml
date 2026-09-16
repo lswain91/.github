@@ -3,7 +3,6 @@ description: High‑level initiative containing multiple user stories, tasks, an
 title: "Epic: "
 labels: ["epic", "needs-triage"]
 type: feature
-projects: ["PhysVR/1"]
 assignees: []
 body:
   - type: markdown
