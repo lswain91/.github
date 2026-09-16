@@ -1,0 +1,3 @@
+# ensures users must use a template for issue creation
+blank_issues_enabled: false
+contact_links: []

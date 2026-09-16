@@ -1,0 +1,63 @@
+name: General Task
+description: A non‑feature, non‑bug task such as refactoring, cleanup, documentation, or PM work
+title: "Task: "
+labels: ["task"]
+projects: ["PhysVR/1"]
+type: task
+assignees: []
+body:
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story (Optional)
+      description: Use this only if the task has a user-facing or workflow-facing justification.
+      placeholder: |
+        As a [developer/maintainer/PM]
+        I need [task or change]
+        So that [maintenance, clarity, or workflow improvement]
+    validations:
+      required: false
+
+  - type: textarea
+    id: objective
+    attributes:
+      label: Objective
+      description: A clear description of what this task aims to achieve.
+    validations:
+      required: true
+
+  - type: textarea
+    id: details-assumptions
+    attributes:
+      label: Details & Assumptions
+      placeholder: |
+        - Document what you know
+        - Add constraints, decisions, or context
+        - Include any relevant links
+    validations:
+      required: false
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps
+      description: Add or remove steps as needed.
+      placeholder: |
+        - [ ] Step 1
+        - [ ] Step 2
+        - [ ] Step 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria (Gherkin)
+      render: gherkin
+      placeholder: |
+        Scenario: Task completed successfully
+          Given [context or precondition]
+          When [the task steps are executed]
+          Then [the expected state or outcome is achieved]
+    validations:
+      required: true

@@ -1,0 +1,38 @@
+name: User Story
+description: User story template
+title: "User story: "
+labels: ["user-story"]
+projects: ["PhysVR/1"]
+assignees: []
+body:
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story
+      placeholder: |
+        As a [role]
+        I need [function]
+        So that [benefit]
+    validations:
+      required: true
+
+  - type: textarea
+    id: details-assumptions
+    attributes:
+      label: Details and Assumptions
+      placeholder: |
+        - [document what you know]
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      render: gherkin
+      placeholder: |
+        Given [some context]
+        When [certain action is taken]
+        Then [the outcome of action is observed]
+    validations:
+      required: true

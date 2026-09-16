@@ -1,0 +1,69 @@
+name: Epic User Story
+description: High‑level initiative containing multiple user stories, tasks, and bugs
+title: "Epic: "
+labels: ["epic", "needs-triage"]
+type: feature
+projects: ["PhysVR/1"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Epic Overview
+
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story
+      description: As a [role], I need [high-level capability or initiative], so that [strategic outcome or value]
+      placeholder: |
+        As a [role]
+        I need [high-level capability or initiative]
+        So that [strategic outcome or value]
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-motivation
+    attributes:
+      label: Problem / Motivation
+      description: What problem does this Epic solve? Why does it matter? What user or business value does it deliver?
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: What is included in this Epic?
+      placeholder: |
+        - [ ] Item 1
+        - [ ] Item 2
+        - [ ] Item 3
+    validations:
+      required: false
+
+  - type: textarea
+    id: out-of-scope
+    attributes:
+      label: Out of Scope
+      description: What is *not* included?
+      placeholder: |
+        - [ ] Item A
+        - [ ] Item B
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria (Gherkin)
+      description: Epic-level behaviour or outcome
+      render: gherkin
+      placeholder: |
+        Scenario: [Epic-level behaviour or outcome]
+          Given [context or precondition]
+          When [action or trigger]
+          Then [expected high-level result]
+    validations:
+      required: true
